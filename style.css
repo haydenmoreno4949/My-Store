@@ -1,0 +1,12 @@
+
+body{
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+
+}
+    h1{
+    align-items: center;
+    }
