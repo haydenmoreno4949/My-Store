@@ -1,54 +1,123 @@
-
-body{
+body {
     background-color: whitesmoke;
-   
+    display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
-    border-radius: 8px;
-    
-
-}
-    h1{
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  h1 {
+    display: flex;
+    justify-content: center;
     align-items: center;
     height: 200px;
     width: 150px;
     background-color: brown;
     border-radius: 20%;
-   align-items: center;
-   padding-left: 18px;
-   padding-top: 80px;
-   color: white;
-    }
-
-img{
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  img {
     border-radius: 20%;
-    margin: 15px 0;
-    padding: 40px;
-padding-top: 60px;
-}
-
-ul{
+    max-width: 100%;
+    height: auto;
+  }
+  
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: brown;
     display: flex;
     justify-content: center;
+    width: 100%;
     position: sticky;
     top: 0;
-}
-ul li a{
+    z-index: 1000;
+  }
+  
+  ul li a {
     display: block;
     color: white;
-    padding:  14px 16px;
+    padding: 14px 16px;
     text-decoration: none;
-    margin: 0;
-    margin-top: 0;
-
-}
-ul li a:hover{
+  }
+  
+  ul li a:hover {
     background-color: rgb(196, 72, 72);
-
-   
+  }
+  
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
     
-}
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    text-decoration: none;
+    
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  input, textarea {
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 10px;
+   }
+   
+   button {
+    padding: 10px 15px;
+    background-color: navy;
+    color: white;
+    border: none;
+   }
+   
+   button:hover {
+    background-color: darkblue;
+   }
+   
+  
